@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <title>Morpion</title> 
+        <meta charset="utf-8" /> 
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="java.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="titre" style="font-family: Algerian, serif;">Morpion</div>
+            <div id="gameGrid">
+                <button value="0" class="case" id="1" onclick="changeValue(this.id)"></button>
+                <button value="0" class="case" id="2" onclick="changeValue(this.id)"></button>
+                <button value="0" class="case" id="3" onclick="changeValue(this.id)"></button>
+                <button value="0" class="case" id="4" onclick="changeValue(this.id)"></button>
+                <button value="0" class="case" id="5" onclick="changeValue(this.id)"></button>
+                <button value="0" class="case" id="6" onclick="changeValue(this.id)"></button>
+                <button value="0" class="case" id="7" onclick="changeValue(this.id)"></button>
+                <button value="0" class="case" id="8" onclick="changeValue(this.id)"></button>
+                <button value="0" class="case" id="9" onclick="changeValue(this.id)"></button>
+            </div>
+            <div id="gameInfo">
+                <p id="tour" style="font-family: 'Harlow Solid Italic', cursive;"> Tour n°1, a Rouge de jouer.</p>
+                <h3 id="bleu" style="font-family: 'Harlow Solid Italic', cursive;">Bleu: 0</h3>
+                <h3 id="rouge" style="font-family: 'Harlow Solid Italic', cursive;">Rouge: 0</h3>
+                <button class="reset" onclick="reset()">New Game</button>
+            </div>
+
+        </div>
+    </body>
+</html>
